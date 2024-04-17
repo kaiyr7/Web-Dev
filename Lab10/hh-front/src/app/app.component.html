@@ -1,0 +1,13 @@
+<h1>Companies</h1>
+<ul>
+  <li *ngFor="let company of companies" (click)="onCompanyClick(company)">
+    {{ company.id }} - {{ company.name }}
+  </li>
+</ul>
+<hr>
+<h2>Vacancies</h2>
+<ul>
+  <li *ngFor="let vacancy of vacancies">
+    {{ vacancy.id }} - {{ vacancy.name }}
+  </li>
+</ul>
